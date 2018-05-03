@@ -95,8 +95,7 @@ header #site-logo:hover {
 
 .page-divider-header {
   margin-top: 20px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #006699;
+  margin-bottom: 10px;
 }
 
 .article-hover-overlay.button {
