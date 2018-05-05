@@ -22,7 +22,6 @@ a {
   background: transparent;
   border: 1px solid #fff;
   border-radius: 3px;
-  display: inline-block;
   transition: .4s ease;
   user-select: none;
 }
@@ -36,6 +35,8 @@ a {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  /* Set the background for the entire site. This
+     This will be visible on bigger screens */
   background-image: url('../img/bg.jpg');
   background-size: cover;
   background-position: right center;
@@ -56,13 +57,24 @@ header h1 {
 header #site-logo {
   width: auto;
   max-height: 100px;
-  float:left;
   transition: 0.5s ease;
 }
 
 header #site-logo:hover {
   transform: scale(1.1);
   transition: 0.5s ease;
+}
+
+header .header-logo {
+  text-align: center;
+  margin: 0;
+  width: 10%;
+  order: 1;
+}
+
+header .header-text {
+  width: 90%;
+  order: 2;
 }
 
 .main-content {
@@ -89,10 +101,6 @@ header #site-logo:hover {
   padding: 10px 0px 10px 0px;
 }
 
-.main-article-cover-text .button {
-  float: right;
-}
-
 .page-divider-header {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -111,11 +119,16 @@ header #site-logo:hover {
   opacity: 0;
 }
 
-.flexible {
+.flexible-row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 100%;
+}
+
+.flexible-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .featured-article {
@@ -147,15 +160,29 @@ footer {
   .main-article-cover-text {
     text-align: center;
   }
-  .main-article-cover-text .button {
-    float: none;
-  }
   header {
     width: auto;
   }
   .featured-article {
     width: calc(100% - 20px);
   }
+
+  header .flexible-row {
+    flex-direction: column;
+  }
+
+  header .header-logo {
+    width: 50%;
+    margin: auto;
+    order: 1;
+  }
+
+  header .header-text {
+    width: 100%;
+    order: 2;
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px){

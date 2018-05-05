@@ -9,12 +9,16 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <header>
-        <a href="#">
-          <img id="site-logo" src="img/site-logo.png" alt="">
-        </a>
-        <h1>Matt Lipski</h1>
-        <h2>Full Stack Developer</h2>
+      <header class="flexible-row">
+        <figure class="header-logo">
+          <a href="#">
+            <img id="site-logo" src="img/site-logo.png" alt="Site Logo">
+          </a>
+        </figure>
+        <section class="flexible-column header-text">
+          <h1>Matt Lipski</h1>
+          <h2>Full Stack Developer</h2>
+        </section>
       </header>
       <section class="main-content">
         <h2 class="page-divider-header">Newest Work</h2>
@@ -28,31 +32,34 @@
           </div>
         </article>
         <h2 class="page-divider-header">Featured Work</h2>
-        <div class="flexible">
+        <div class="flexible-row">
           <article class="featured-article">
             <a href="#">
               <div class="article-hover-overlay button">
+                <!-- This overlay shows up on hover. It shows a 'view' button over the image-->
                 <span>View</span>
               </div>
-              <img src="img/video.png" alt="">
+              <img src="img/video.png" alt="Video Portfolio">
               <h3>Video</h3>
             </a>
           </article>
           <article class="featured-article">
             <a href="#">
               <div class="article-hover-overlay button">
+                <!-- This overlay shows up on hover. It shows a 'view' button over the image-->
                 <span>View</span>
               </div>
-              <img src="img/webdev.png" alt="">
+              <img src="img/webdev.png" alt="Web Development Portfolio">
               <h3>Web Dev</h3>
             </a>
           </article>
           <article class="featured-article">
             <a href="#">
               <div class="article-hover-overlay button">
+                <!-- This overlay shows up on hover. It shows a 'view' button over the image-->
                 <span>View</span>
               </div>
-              <img src="img/design.png" alt="">
+              <img src="img/design.png" alt="Design Portfolio">
               <h3>Design</h3>
             </a>
           </article>
